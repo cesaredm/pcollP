@@ -1,1 +1,33 @@
-.menuLateral
+.menuLateral{
+    background-color: #212121;
+    box-shadow: 0px 0px 10px #282828;
+}
+.lateral li:hover{
+    background-color: #282828;
+    cursor: pointer;
+}
+.menuPrincipal{
+    background-color: #212121;
+}
+.TituloTienda
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cajaTitulo{
+    box-shadow: 0px 0px 15px #acacac;
+}
+.precio
+{
+    display: inline;
+}
+.valor
+{
+    display: inline;
+}
+.card{
+    box-shadow: 0px 0px 15px #acacac;
+}
+.imgDetails
+{
+    box-shadow: 0px 0px 15px #acacac;
+}

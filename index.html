@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Inicio</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top menuPrincipal">
   <a class="navbar-brand" href="#">Pcoll</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -25,21 +26,179 @@
   </div>
 </nav>
 <div class="container-fluid">
+												<!--menu lateral-->
 	<div class="row">
-		<div class="col-md-3 bg-dark pt-2">
+		<div class="col-md-2 pt-2 menuLateral">
 			<h6 class="text-white text-center">
 				Tiendas
 			</h6>
-			<ul class="navbar-nav text-white menuLateral">
-				<li class="nav-item p-2">Camel</li>
+			<ul class="navbar-nav text-white lateral">
+				<li class="nav-item p-2">Kamel</li>
 				<li class="nav-item p-2">Huracan</li>
 				<li class="nav-item p-2">El Bombazo</li>
 				<li class="nav-item p-2">Sedal</li>
 			</ul>
 		</div>
+												<!--titulo de tienda-->
+		<div class="col-md-10 mt-2">
+			<div class="border border-2 rounded cajaTitulo">
+				<h1 class="text-center pt-2 pb-2">
+					Tienda Kamel
+				</h1>
+			</div>
+											<!--Contenedor de la galeria-->
+			<div class="row mt-2 contenedor" id="galeria">
+					<div class="col-sm-6 col-md-3 mt-2 elemento">
+						<div class="card">
+							<div class="card-header">
+								<div class="text-center lead">
+									Traje Completo
+								</div>
+							</div>
+							<div class="card-body">
+								<img src="images/3.jpg" alt="" class="img-fluid rounded product">
+							</div>
+							<div class="card-footer text-center">
+								<div>
+									<!--<p class="font-weight-bold small precio">Precio: </p><p class="small valor">100.00 US</p><br>
+									<p class="font-weight-bold small precio">telefono: </p><p class="small valor">+505 87760151</p>-->
+									<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalLong">
+										Detalles
+									</button>
+								
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+										aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLongTitle">Agregar Cliente</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="row justify-content-center">
+														<img src="images/3.jpg" alt="" class="img-fluid imgDetails">
+														<div class="col-6 text-right lead font-weight-bold">Precio:</div>
+														<div class="col-6 text-left lead">100.00 US</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+					<div class="col-sm-6 col-md-3 mt-2 elemento">
+						<div class="card">
+							<div class="card-header">
+								<div class="text-center lead">
+									Traje Casual
+								</div>
+							</div>
+							<div class="card-body">
+								<img src="images/30.jpg" alt="" class="img-fluid rounded product">
+							</div>
+							<div class="card-footer">
+								
+							</div>
+						</div>
+					</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+							<div class="text-center lead">
+								Pantalon, Camisa Tommy
+							</div>
+						</div>
+						<div class="card-body">
+							<img src="images/31.jpg" alt="" class="img-fluid rounded product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+							<div class="text-center lead">
+								Traje Casual Caballero
+							</div>
+						</div>
+						<div class="card-body">
+							<img src="images/5.jpg" alt="" class="img-fluid rounded product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+
+						</div>
+						<div class="card-body">
+							<img src="images/34.jpg" alt="" class="img-fluid rounded product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+
+						</div>
+						<div class="card-body">
+							<img src="images/39.jpg" alt="" class="img-fluid rounded	 product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+
+						</div>
+						<div class="card-body">
+							<img src="images/38.jpg" alt="" class="img-fluid rounded	 product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 mt-2 elemento">
+					<div class="card">
+						<div class="card-header">
+
+						</div>
+						<div class="card-body">
+							<img src="images/35.jpg" alt="" class="img-fluid rounded	 product">
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/acomodarImgs.js"></script>
 </body>
 </html>
