@@ -1,10 +1,10 @@
-.menuLateral{
-    background-color: #212121;
-    box-shadow: 0px 0px 10px #282828;
+html body
+{
+    /*background-color: rgb(252, 240, 240);*/
 }
-.lateral li:hover{
-    background-color: #282828;
+.lateral li a:hover{
     cursor: pointer;
+    color: salmon;
 }
 .menuPrincipal{
     background-color: #212121;
@@ -15,19 +15,55 @@
 }
 .cajaTitulo{
     box-shadow: 0px 0px 15px #acacac;
-}
-.precio
-{
-    display: inline;
-}
-.valor
-{
-    display: inline;
+    height: 280px;
+    background-image: url('../images/encabezado4.jpg');
 }
 .card{
-    box-shadow: 0px 0px 15px #acacac;
+    box-shadow: 0px 0px 30px #acacac;
 }
 .imgDetails
 {
     box-shadow: 0px 0px 15px #acacac;
 }
+.card-body
+{
+    cursor: pointer;
+}
+.categorias{
+    box-shadow: 0px 0px 15px #acacac;
+    background-color: #ff414d;
+}
+.filas2
+{
+    margin-top: 18%;
+}
+.navbar-text
+{
+    margin-left: 300%;
+}
+.submenu
+{
+    opacity: 0.9;
+}
+.dropdown .dropdown-item
+{
+    color: white;
+}
+/*estilo para los submenus*/
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+  }

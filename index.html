@@ -1,204 +1,320 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Inicio</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="icomoon/style.css">
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark sticky-top menuPrincipal">
-  <a class="navbar-brand" href="#">Pcoll</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ayuda</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container-fluid">
-												<!--menu lateral-->
-	<div class="row">
-		<div class="col-md-2 pt-2 menuLateral">
-			<h6 class="text-white text-center">
-				Tiendas
-			</h6>
-			<ul class="navbar-nav text-white lateral">
-				<li class="nav-item p-2">Kamel</li>
-				<li class="nav-item p-2">Huracan</li>
-				<li class="nav-item p-2">El Bombazo</li>
-				<li class="nav-item p-2">Sedal</li>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top menuPrincipal">
+		<a class="navbar-brand" href="#">Pcoll</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Tiendas
+					</a>
+					<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+						<li class="dropdown-submenu">
+							<a class="dropdown-item dropdown-toggle">Tienda Kamell</a>
+							<ul class="dropdown-menu bg-dark submenu">
+								<li class="">
+									<a class="dropdown-item" href="#Cosmeticos">Cosmeticos</a>
+								</li>
+								<li class="">
+									<a href="#Ropa" class="dropdown-item">Ropa</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="" class="dropdown-item">El Huracan</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
+			<form class="form-inline my-2 my-lg-0"> <input class="form-control	mr-sm-2" type="search"
+					placeholder="Search" aria-label="Search"> <button class="btn	btn-outline-success	my-2	my-sm-0"
+					type="submit">Search</button> </form>
 		</div>
-												<!--titulo de tienda-->
-		<div class="col-md-10 mt-2">
-			<div class="border border-2 rounded cajaTitulo">
-				<h1 class="text-center pt-2 pb-2">
-					Tienda Kamel
-				</h1>
-			</div>
-											<!--Contenedor de la galeria-->
-			<div class="row mt-2 contenedor" id="galeria">
-					<div class="col-sm-6 col-md-3 mt-2 elemento">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-center lead">
-									Traje Completo
+	</nav>
+
+	<div class="container-fluid">
+		<!--titulo de tienda-->
+		<div class="row">
+			<div class="col-md-12 col-lg-12 border border-2 d-none d-sm-none d-md-block d-lg-block cajaTitulo">
+				<div class="">
+					<h1 class="display-3 text-center">
+						Tienda Kamell
+					</h1>
+			 </div>
+			 </div>
+			 <div class="col-md-12 text-center mt-4 d-block d-sm-block d-md-none d-lg-none">
+					<h1 class="lead font-weight-bold d-inline-block p-3 border border-info">
+						Tienda Kamell
+					</h1>	
+			 </div>
+		</div>
+				 <div class="container">
+				<!--categoria-->
+				<div class="row">
+					<div class="col-md-12 mt-2">
+						<div class="border text-center text-white rounded lead mt-2 p-2 categorias" id="Cosmeticos">
+							Cosmeticos
+						</div>
+						<!--Contenedor de la galeria-->
+						<div class="row mt-2 contenedor" id="galeria">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Aceite de Almendras
+										</div>
+									</div>
+									<div class="card-body" data-toggle="modal" data-target="#exampleModalLong">
+										<img src="images/Aceite de almendras.jpeg" alt="" class="img-fluid rounded">
+									</div>
+									<div class="card-footer text-center bg-white">
+										<div class="font-weight-bold">
+											Precio :
+										</div>
+										100.00 C$
+									</div>
 								</div>
-							</div>
-							<div class="card-body">
-								<img src="images/3.jpg" alt="" class="img-fluid rounded product">
-							</div>
-							<div class="card-footer text-center">
 								<div>
-									<!--<p class="font-weight-bold small precio">Precio: </p><p class="small valor">100.00 US</p><br>
-									<p class="font-weight-bold small precio">telefono: </p><p class="small valor">+505 87760151</p>-->
-									<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalLong">
-										Detalles
-									</button>
-								
-									<!-- Modal -->
-									<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-										aria-hidden="true">
-										<div class="modal-dialog modal-dialog-centered" role="document">
+									<!--modal-->
+									<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+										aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 											<div class="modal-content">
 												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLongTitle">Agregar Cliente</h5>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<h5 class="modal-title" id="exampleModalLongTitle">Aceite de
+														Almendra
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
 														<span aria-hidden="true">&times;</span>
 													</button>
 												</div>
 												<div class="modal-body">
 													<div class="row justify-content-center">
-														<img src="images/3.jpg" alt="" class="img-fluid imgDetails">
-														<div class="col-6 text-right lead font-weight-bold">Precio:</div>
-														<div class="col-6 text-left lead">100.00 US</div>
+														<!--Carrusel-->
+														<div class="col-10 col-sm-6 col-lg-6">
+															<div id="demo" class="carousel slide" data-ride="carousel">
+																<!-- Indicators -->
+																<ul class="carousel-indicators">
+																	<li data-target="#demo" data-slide-to="0"
+																		class="active"></li>
+																	<li data-target="#demo" data-slide-to="1"></li>
+																	<li data-target="#demo" data-slide-to="2"></li>
+																</ul>
+																<!-- imagenes del slide de carrusel -->
+																<div class="carousel-inner">
+																	<div class="carousel-item active">
+																		<img src="images/Aceite de almendras.jpeg"
+																			alt="Los Angeles" class="img-fluid">
+																	</div>
+																	<div class="carousel-item">
+																		<img src="images/agua tonica de rosas (2).jpeg"
+																			alt="Chicago" class="img-fluid">
+																	</div>
+																	<div class="carousel-item">
+																		<img src="images/cartera y audifonos.jpeg"
+																			alt="New York" class="img-fluid">
+																	</div>
+																</div>
+																<!-- control derecho y izquierdo de carrusel -->
+																<a class="carousel-control-prev" href="#demo"
+																	data-slide="prev">
+																	<span class="carousel-control-prev-icon"></span>
+																</a>
+																<a class="carousel-control-next" href="#demo"
+																	data-slide="next">
+																	<span class="carousel-control-next-icon">
+																	</span>
+																</a>
+															</div>
+														</div>
+														<div class="col-10 col-sm-6 col-lg-6">
+															<div>
+																<div class="font-weight-bold small">
+																	Descripcion:
+																</div>
+																<div class="small text-justify">
+																	Aceite de almendras Para uso facial
+																	suavisa y quita las manchas de la piel
+																</div>
+															</div>
+															<div>
+																<div class="mt-lg-5 mt-md-2 mt-1 font-weight-bold">
+																	Aceite de almendras
+																</div>
+																<div>
+																	<label for="" class="font-weight-bold">
+																		Precio:
+																	</label>
+																	100.00 C$
+																</div>
+															</div>
+															<div>
+																<div class="font-weight-bold">
+																	Contactanos:
+																</div c>
+																<div class="">
+																	<span class="icon-facebook2"></span>
+																	<span class="icon-instagram"></span>
+																	<span class="icon icon-whatsapp"></span>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-secondary"
+														data-dismiss="modal">Close</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-				</div>
-					<div class="col-sm-6 col-md-3 mt-2 elemento">
-						<div class="card">
-							<div class="card-header">
-								<div class="text-center lead">
-									Traje Casual
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Agua Tonica de Rosas
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/agua tonica de rosas (2).jpeg" alt=""
+											class="img-fluid rounded product">
+									</div>
+									<div class="card-footer">
+
+									</div>
 								</div>
 							</div>
-							<div class="card-body">
-								<img src="images/30.jpg" alt="" class="img-fluid rounded product">
-							</div>
-							<div class="card-footer">
-								
-							</div>
-						</div>
-					</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
-							<div class="text-center lead">
-								Pantalon, Camisa Tommy
-							</div>
-						</div>
-						<div class="card-body">
-							<img src="images/31.jpg" alt="" class="img-fluid rounded product">
-						</div>
-						<div class="card-footer">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
-							<div class="text-center lead">
-								Traje Casual Caballero
-							</div>
-						</div>
-						<div class="card-body">
-							<img src="images/5.jpg" alt="" class="img-fluid rounded product">
-						</div>
-						<div class="card-footer">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Crema Hidratante de Dia Y noche
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/crema hidratante de dia.jpeg" alt=""
+											class="img-fluid rounded product">
+									</div>
+									<div class="card-footer">
 
-						</div>
-						<div class="card-body">
-							<img src="images/34.jpg" alt="" class="img-fluid rounded product">
-						</div>
-						<div class="card-footer">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Exfoliante Facial de Citricos
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/exfoliante facial.jpeg" alt=""
+											class="img-fluid rounded product">
+									</div>
+									<div class="card-footer">
 
-						</div>
-						<div class="card-body">
-							<img src="images/39.jpg" alt="" class="img-fluid rounded	 product">
-						</div>
-						<div class="card-footer">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Protector Solar de Coco
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/protector solar.jpeg" alt="" class="img-fluid rounded product">
+									</div>
+									<div class="card-footer">
 
-						</div>
-						<div class="card-body">
-							<img src="images/38.jpg" alt="" class="img-fluid rounded	 product">
-						</div>
-						<div class="card-footer">
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 mt-2 elemento">
-					<div class="card">
-						<div class="card-header">
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Deep clean
+										</div c>
+									</div>
+									<div class="card-body">
+										<img src="images/deep clean.jpeg" alt="" class="img-fluid rounded	 product">
+									</div>
+									<div class="card-footer">
 
-						</div>
-						<div class="card-body">
-							<img src="images/35.jpg" alt="" class="img-fluid rounded	 product">
-						</div>
-						<div class="card-footer">
-							
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Jabón de Carbón Activado
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/jabon de carbon.jpeg" alt=""
+											class="img-fluid rounded	 product">
+									</div>
+									<div class="card-footer">
+
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-3 mt-2 elemento">
+								<div class="card">
+									<div class="card-header">
+										<div class="text-center lead small">
+											Pinta Labios Kamell
+										</div>
+									</div>
+									<div class="card-body">
+										<img src="images/pinta labio.jpeg" alt="" class="img-fluid rounded	 product">
+									</div>
+									<div class="card-footer">
+
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/acomodarImgs.js"></script>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/menuNiveles.js"></script>
+	<script src="js/opcionCarrusel.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/acomodarImgs.js"></script>
 </body>
+
 </html>
