@@ -16,7 +16,7 @@ html body
 .cajaTitulo{
     box-shadow: 0px 0px 15px #acacac;
     height: 280px;
-    background-image: url('../images/encabezado4.jpg');
+    background-image: url('../img/encabezado.jpg');
 }
 .card{
     box-shadow: 0px 0px 30px #acacac;
@@ -28,6 +28,17 @@ html body
 .card-body
 {
     cursor: pointer;
+}
+.redes a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
+.redes a:hover
+{
+    color: black;
+    text-decoration: none;
 }
 .categorias{
     box-shadow: 0px 0px 15px #acacac;
